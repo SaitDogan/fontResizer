@@ -1,0 +1,26 @@
+{
+  "name": "fontResizer",
+  "title": "jQuery fontResizer",
+  "description": "jQuery plugin for font resize on JavaScript 'resize' event.",
+  "keywords": [
+    "font",
+    "resize"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Budnikov Roman",
+    "url": "https://github.com/Supro"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Supro/fontResizer/blob/master/MIT-LICENSE.txt"
+    }
+  ],
+  "bugs": "https://github.com/Supro/fontResizer/issues",
+  "homepage": "https://github.com/Supro/fontResizer",
+  "docs": "https://github.com/Supro/fontResizer/blob/master/README.md",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
