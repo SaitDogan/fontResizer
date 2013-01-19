@@ -1,21 +1,20 @@
 fontResize = (element, options)->
   @.$element= $(element)
   @.options = $.extend({}, $.fn.fontResizer.defaults, options)
-  @.baseCoefficient = @.$element.width()/@.$element.height()
   if @.options.startResize 
     @.resize()
   @.listen()
 
 fontResize.prototype = {
-  listen: ()->
+  listen: ->
     @.$element
       .on('resize', $.proxy(@.resize, @))
-  resize: ()->
+  resize: ->
     coefficient = @.obtain()
     $.each(@.options.elements, (i,v)->
       $(v.elem).css({'font-size': v.size*coefficient})
     )
-  obtain: ()->
+  obtain: ->
     val = @.$element.width()/(@.options.baseWidth/100)/100
 }
 

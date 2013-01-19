@@ -5,7 +5,6 @@
   fontResize = function(element, options) {
     this.$element = $(element);
     this.options = $.extend({}, $.fn.fontResizer.defaults, options);
-    this.baseCoefficient = this.$element.width() / this.$element.height();
     if (this.options.startResize) {
       this.resize();
     }
