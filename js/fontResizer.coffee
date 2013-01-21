@@ -23,6 +23,5 @@ $.fn.fontResizer = (options)->
 
 $.fn.fontResizer.defaults = {
   baseWidth: 640
-, baseHeight: 480
 , startResize: false
 }

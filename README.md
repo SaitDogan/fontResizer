@@ -6,13 +6,10 @@ jQuery plugin for font resize on JavaScript "resize" event
 
 ```javascript
 
-  $(function(){
-    $(window).fontResizer({
-      elements: [{elem: ".fontText", size: 14}]
-    , baseWidth: 1280
-    , baseHeight: 914
-    , startResize: true
-    });
+  $(window).fontResizer({
+    elements: [{elem: ".fontText", size: 14}]
+  , baseWidth: 1280
+  , startResize: true
   });
 
 ```
