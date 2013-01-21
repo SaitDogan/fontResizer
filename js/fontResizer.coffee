@@ -1,3 +1,5 @@
+$ = jQuery
+
 fontResize = (element, options)->
   @.$element= $(element)
   @.options = $.extend({}, $.fn.fontResizer.defaults, options)
