@@ -1,6 +1,6 @@
 # fontResize
 
-jQuery plugin for font resize on JavaScript "resize" event
+jQuery plugin for font resize on JavaScript "resize" event.
 
 ## Usage
 
