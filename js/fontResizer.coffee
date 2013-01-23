@@ -14,7 +14,6 @@ fontResize.prototype = {
   resize: ->
     coefficient = @.obtain()
     $.each @.options.elements, $.proxy (i,v)->
-      console.log @
       $(v.elem).css {'font-size': v.size*coefficient+@.options.sizeUnit}
     ,@
   obtain: ->
