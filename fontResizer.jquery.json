@@ -7,7 +7,7 @@
     "resize",
     "event"
   ],
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": {
     "name": "Budnikov Roman",
     "url": "https://github.com/Supro"
@@ -21,6 +21,7 @@
   "bugs": "https://github.com/Supro/fontResizer/issues",
   "homepage": "https://github.com/Supro/fontResizer",
   "docs": "https://github.com/Supro/fontResizer/blob/master/README.md",
+  "demo": "http://supro.github.com/fontResizer",
   "dependencies": {
     "jquery": ">=1.5"
   }

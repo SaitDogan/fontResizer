@@ -14,6 +14,10 @@ jQuery plugin for font resize on JavaScript "resize" event.
   });
 
 ```
+##Demo
+
+[Live Demo](http://supro.github.com/fontResizer)
+
 ## Contributing
 
 1. Fork it
