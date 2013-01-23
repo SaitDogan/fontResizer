@@ -4,73 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Fontresizer by Supro</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Fontresizer</h1>
-        <p>jQuery plugin for font resize on JavaScript &quot;resize&quot; event</p>
-
-        <p class="view"><a href="https://github.com/Supro/fontResizer">View the Project on GitHub <small>Supro/fontResizer</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/Supro/fontResizer/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Supro/fontResizer/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Supro/fontResizer">View On <strong>GitHub</strong></a></li>
-        </ul>
+        <h1 class="fontH1">Fontresizer</h1>
+        <p class="fontText">jQuery plugin for font resize on JavaScript &quot;resize&quot; event</p>
       </header>
       <section>
-        <h1>fontResize</h1>
-
-<p>jQuery plugin for font resize on JavaScript "resize" event.</p>
-
-<h2>Usage</h2>
-
-<div class="highlight"><pre>
-  <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">fontResizer</span><span class="p">({</span>
-    <span class="nx">elements</span><span class="o">:</span> <span class="p">[{</span><span class="nx">elem</span><span class="o">:</span> <span class="s2">".fontText"</span><span class="p">,</span> <span class="nx">size</span><span class="o">:</span> <span class="mi">1</span><span class="p">}]</span>
-  <span class="p">,</span> <span class="nx">baseWidth</span><span class="o">:</span> <span class="mi">1280</span>
-  <span class="p">,</span> <span class="nx">startResize</span><span class="o">:</span> <span class="kc">true</span>
-  <span class="p">,</span> <span class="nx">sizeUnit</span><span class="o">:</span> <span class="s2">"em"</span>
-  <span class="p">});</span>
-
-</pre></div>
-
-<h2>Contributing</h2>
-
-<ol>
-<li>Fork it</li>
-<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
-<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
-<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
-<li>Create new Pull Request
-</li>
-</ol>
+        <h1 class="fontH1">fontResize</h1>
+        <p class="fontText">jQuery plugin for font resize on JavaScript "resize" event.</p>
+        <h2 class="fontH2">Resize this page to see result</h2>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/Supro">Supro</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p class="fontText">This project is maintained by <a  class="fontText" href="https://github.com/Supro">Supro</a></p>
+        <p class="fontText"><small class="fontSmall">Hosted on GitHub Pages &mdash; Theme by <a  class="fontText" href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-35860761-3");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="javascripts/fontResizer.js"></script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-35860761-3");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <script type="text/javascript">
+      $(function(){
+        $(window).fontResizer({
+          elements: [{elem: ".fontText", size: 14}
+                   , {elem: ".fontH1", size: 28}
+                   , {elem: ".fontH2", size: 20}
+                   , {elem: ".fontStrong", size: 12}
+                   , {elem: ".fontSmall", size: 12}]
+        , startResize: true
+        , baseWidth: 1280
+        });
+      })
+    </script>    
   </body>
 </html>
