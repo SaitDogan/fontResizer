@@ -21,7 +21,6 @@
       var coefficient;
       coefficient = this.obtain();
       return $.each(this.options.elements, $.proxy(function(i, v) {
-        console.log(this);
         return $(v.elem).css({
           'font-size': v.size * coefficient + this.options.sizeUnit
         });
