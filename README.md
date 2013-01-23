@@ -7,9 +7,10 @@ jQuery plugin for font resize on JavaScript "resize" event.
 ```javascript
 
   $(window).fontResizer({
-    elements: [{elem: ".fontText", size: 14}]
+    elements: [{elem: ".fontText", size: 1}]
   , baseWidth: 1280
   , startResize: true
+  , sizeUnit: "em"
   });
 
 ```

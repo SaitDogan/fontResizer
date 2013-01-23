@@ -20,11 +20,12 @@
     resize: function() {
       var coefficient;
       coefficient = this.obtain();
-      return $.each(this.options.elements, function(i, v) {
+      return $.each(this.options.elements, $.proxy(function(i, v) {
+        console.log(this);
         return $(v.elem).css({
-          'font-size': v.size * coefficient
+          'font-size': v.size * coefficient + this.options.sizeUnit
         });
-      });
+      }, this));
     },
     obtain: function() {
       var val;
@@ -39,7 +40,8 @@
 
   $.fn.fontResizer.defaults = {
     baseWidth: 640,
-    startResize: false
+    startResize: false,
+    sizeUnit: "px"
   };
 
 }).call(this);
