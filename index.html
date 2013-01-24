@@ -1,35 +1,196 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title>fontResizer</title>
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="js/fontResizer.js"></script>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by supro</title>
+
+  <style>
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Jura&subset=latin,cyrillic);
+body {
+  padding: 0;
+  margin: 0;
+  background: #333333 url("http://codepen.io/images/classy_fabric.png") left top repeat;
+  color: #D3D3D3;
+}
+
+#main {
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  margin: 0 30%;
+  height: 100%;
+}
+#main .font_H1 {
+  font-family: "Poiret One", sans-serif;
+  padding: 1% 0;
+  margin: 0;
+}
+#main .font_H2 {
+  font-family: "Poiret One", sans-serif;
+  padding: 1% 0;
+  margin: 0;
+}
+#main .font_Text {
+  font-family: "Jura", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+#main #links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 20%;
+}
+#main #links a {
+  padding: 0;
+  margin: 0;
+  height: 5%;
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  color: #FFF800;
+}
+#main #links a:visited {
+  color: #FFF800;
+}
+#main #links a:hover {
+  color: #FFDD00;
+}
+
+#footer {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  margin: 0 10% 0 0;
+}
+#footer #copyright {
+  font-family: "Poiret One", sans-serif;
+}
+#footer #copyright a {
+  padding: 0;
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  text-decoration: none;
+  color: #D3D3D3;
+}
+#footer #copyright a:visited {
+  color: #D3D3D3;
+}
+#footer #copyright a:hover {
+  color: #F3F3F3;
+}
+#codepen-footer,#codepen-footer *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#codepen-footer{position:fixed;bottom:0;left:0;width:100%;padding:0 10px;height:30px;color:#eeeeee;background-color:#505050;background:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #505050), color-stop(100%, #383838));background:-webkit-linear-gradient(#505050,#383838);background:-moz-linear-gradient(#505050,#383838);background:-o-linear-gradient(#505050,#383838);background:linear-gradient(#505050,#383838);border-top:1px solid black;border-bottom:1px solid black;box-shadow:inset 0 1px 0 #6e6e6e,0 2px 2px rgba(0,0,0,0.4);font:12px/30px "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;line-height:30px}#codepen-footer a{color:#a7a7a7;text-decoration:none}#codepen-footer a:hover{color:white}#footer-right{position:absolute;right:5px;top:0}#bs-button{padding:1px 6px 2px 19px;background:url(/images/browserstack.png),-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff4d1), color-stop(100%, #c9b67b));background:url(/images/browserstack.png),-webkit-linear-gradient(#fff4d1,#c9b67b);background:url(/images/browserstack.png),-moz-linear-gradient(#fff4d1,#c9b67b);background:url(/images/browserstack.png),-o-linear-gradient(#fff4d1,#c9b67b);background:url(/images/browserstack.png),linear-gradient(#fff4d1,#c9b67b);background-position:4px center,center center;background-repeat:no-repeat;background-size:12px 12px,cover;border:0;font:11px "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;border-radius:5px}#bs-button:hover{background:url(/images/browserstack.png),#fff4d1;background-position:4px center,center center;background-repeat:no-repeat;background-size:12px 12px,cover}
+
+  </style>
+
 </head>
 
 <body>
-<style type="text/css">
-  body,html{width:100%;height:100%;margin:0;padding:0;background-color:#f3f3f3;}
-  #element{left:2.5%;top:2.5%;width:30%;background-color:#d3d3d3;position:absolute;padding:1%;}
-  .fontText{color:#333;}
-  .fontH1{color:#666;}
-  .fontH2{color:#666;}
-</style>
-  <div id="element">
-    <h1 class="fontH1">This title</h1>
-    <h2 class="fontH2">will be</h1>
-    <p class="fontText">resized by fontResizer jQuery plugin</p>
-  </div>
-<script type="text/javascript">
-  $(function(){
-    $(window).fontResizer({
-      elements: [{elem: ".fontText", size: 14},
-                 {elem: ".fontH1", size: 24},
-                 {elem: ".fontH2", size: 17}]
-    , baseWidth: 1280
-    , startResize: true
+
+  <section id='main'>
+  <h1 class='font_H1'>
+    fontResizer()
+  </h1>
+  <p class='font_Text'>
+    Simple jQuery plugin to resize, font on JavaScript "resize" event. Resize this window to see result.
+  </p>
+  <h2 class='font_H2'>
+    Links:
+  </h2>
+  <section id='links'>
+    <a class='font_Text' href='http://plugins.jquery.com/fontResizer'>plugins.jQuery.com/fontResizer</a>
+    <li>
+      <a class='font_Text' href='https://github.com/Supro/fontResizer'>Github.com/Supro/fontResizer</a>
+    </li>
+  </section>
+</section>
+<section id='footer'>
+  <section id='copyright'>
+    © 2013
+    <a href='https://github.com/Supro'>Supro</a>
+  </section>
+</section>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script>
+(function() {
+
+(function() {
+  var $, fontResize;
+
+  $ = jQuery;
+
+  fontResize = function(element, options) {
+    this.$element = $(element);
+    this.options = $.extend({}, $.fn.fontResizer.defaults, options);
+    if (this.options.startResize) this.resize();
+    return this.listen();
+  };
+
+  fontResize.prototype = {
+    listen: function() {
+      return this.$element.on('resize', $.proxy(this.resize, this));
+    },
+    resize: function() {
+      var coefficient;
+      coefficient = this.obtain();
+      return $.each(this.options.elements, $.proxy(function(i, v) {
+        return $(v.elem).css({
+          'font-size': v.size * coefficient + this.options.sizeUnit
+        });
+      }, this));
+    },
+    obtain: function() {
+      var val;
+      return val = this.$element.width() / (this.options.baseWidth / 100) / 100;
+    }
+  };
+
+  $.fn.fontResizer = function(options) {
+    var data;
+    return data = new fontResize(this, options);
+  };
+
+  $.fn.fontResizer.defaults = {
+    baseWidth: 640,
+    startResize: false,
+    sizeUnit: "px"
+  };
+
+  $(function() {
+    return $(window).fontResizer({
+      elements: [
+        {
+          elem: ".font_H1",
+          size: 28
+        }, {
+          elem: ".font_H2",
+          size: 24
+        }, {
+          elem: ".font_Text",
+          size: 14
+        }, {
+          elem: "#copyright",
+          size: 16
+        }
+      ],
+      baseWidth: 1680,
+      startResize: true
     });
   });
-</script>
+
+}).call(this);
+
+})();
+  </script>
+
+  <div id="codepen-footer">
+    <a href="http://codepen.io/supro/pen/ymLGf" target="_self">Edit this Pen</a>
+  </div>
+
 </body>
+
 </html>
